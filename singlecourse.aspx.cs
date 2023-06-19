@@ -55,11 +55,13 @@ namespace online
 
 
             _con.Open();
-            string query = $"insert into buycoursetbl(uid,coslug,orderdate) values('{uid}','{coslug}','{date1}')";
+            string query = $"insert into buycoursetbl(uid,coslug,orderdate) values('{uid}','{coslug}',getdate())";
             SqlCommand cmd = new SqlCommand(query, _con);
             cmd.ExecuteNonQuery();
+            Response.Redirect("Profile.aspx");
             _con.Close();
 
         }
+
     }
 }
