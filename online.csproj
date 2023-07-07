@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Addcourse.aspx" />
+    <Content Include="Admin\Allusers.aspx" />
     <Content Include="Admin\All_Course.aspx" />
     <Content Include="Admin\Default_Admin.aspx" />
     <Content Include="Admin\Edit_Course.aspx" />
@@ -181,6 +182,13 @@
     </Compile>
     <Compile Include="Admin\admin.Master.designer.cs">
       <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Allusers.aspx.cs">
+      <DependentUpon>Allusers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Allusers.aspx.designer.cs">
+      <DependentUpon>Allusers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\All_Course.aspx.cs">
       <DependentUpon>All_Course.aspx</DependentUpon>

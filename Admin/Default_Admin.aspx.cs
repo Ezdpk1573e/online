@@ -18,6 +18,7 @@ namespace online.Admin
                 Addcourse.Visible = false;
                 EditCourse.Visible = false;
                 AllCourse.Visible = false;
+                Allusers.Visible = false;
             }
             else
             {
@@ -25,12 +26,13 @@ namespace online.Admin
                 Addcourse.Visible = true;
                 EditCourse.Visible = true;
                 AllCourse.Visible = true;
+                Allusers.Visible = true;
             }
         }
 
-        
 
-            protected void aloginBtn_Click(object sender, EventArgs e)
+
+        protected void aloginBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("Login.aspx");
         }
@@ -47,6 +49,11 @@ namespace online.Admin
         protected void AllCourse_Click(object sender, EventArgs e)
         {
             Response.Redirect("All_COurse.aspx");
+        }
+
+        protected void Allusers_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Allusers.aspx");
         }
 
 

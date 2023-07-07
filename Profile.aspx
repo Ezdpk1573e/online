@@ -21,15 +21,20 @@
     </div>
     </div>
             <h2>your courses</h2>
-            <table border="1px">
+            <table border="5px">
                 <thead>
                     <tr>
-                        <th>Sr. no.</th>
-                        <th>Course Image</th>
-                        <th>Course name</th>
-                        <th>Course price</th>
-                        <th>Course duration</th>
-                        <th>Course validity</th>
+                        <th>Sr. no.&nbsp;&nbsp; </th>
+
+                        <th>Course Image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+
+                        <th>&nbsp;Course name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+
+                        <th>&nbsp; Course price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+
+                        <th>Course duration&nbsp;&nbsp; </th>
+
+                        <th>Course validity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
 
                        
                     </tr>
@@ -50,7 +55,7 @@
                             string Valid = "";
                             if (diff <= dura)
                             {
-                                Valid =  " Course Is valid for " + ( dura-diff );
+                                Valid =  " Course Is valid for    " + ( dura-diff );
                             }
                             else
                             {
@@ -65,7 +70,7 @@
                         <td><%=db.reader["coduration"] %></td>
                         <td><%=db.reader["orderdate"] %></td>
                         <td><%=Valid %></td>
-                        <td></td>
+                        <td style="width: 124px"></td>
                     </tr>
                     <%
 
